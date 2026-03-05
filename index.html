@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heena Khan — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">HK</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"><div class="hero-grid"></div></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Heena Khan</h1>
+      <h2 class="hero-title">Software Engineer</h2>
+      <p class="hero-tagline">Backend Systems &nbsp;·&nbsp; Embedded C++ &nbsp;·&nbsp; Cloud &amp; DevOps</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll down</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text reveal">
+          <p>Backend Software Engineer with experience developing and validating software, with strong fundamentals in OOP, data structures, and memory management. Improved performance and stability using RAII and smart pointers.</p>
+          <p>Built automated tests to raise coverage and prevent regressions. Hands-on with modular component design, defect triage, and SDLC collaboration across development and test teams — motivated to build reliable, high-performance systems.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">80%</span>
+              <span class="stat-label">Runtime Reduced</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">90%</span>
+              <span class="stat-label">Test Coverage</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card reveal">
+            <div class="highlight-icon">&#9889;</div>
+            <h3>Performance</h3>
+            <p>Reduced function runtime by 80% through strategic refactoring and elimination of third-party dependencies.</p>
+          </div>
+          <div class="highlight-card reveal">
+            <div class="highlight-icon">&#128274;</div>
+            <h3>Reliability</h3>
+            <p>Diagnosed and resolved memory leaks using Valgrind, RAII, and smart pointers for stable production systems.</p>
+          </div>
+          <div class="highlight-card reveal">
+            <div class="highlight-icon">&#9729;</div>
+            <h3>Cloud</h3>
+            <p>Architected and deployed scalable systems on AWS with Kubernetes, Docker, and infrastructure as code.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">Software Engineer</h3>
+                <p class="company">KPIT Technologies Pvt. Ltd.</p>
+                <p class="location">Pune, India</p>
+              </div>
+              <span class="timeline-date">May 2023 – Jul 2024</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Refactored a legacy embedded C++ cryptography module — removed third-party dependencies (Boost, SQLite), replaced with STL-based implementations, <strong>reducing function runtime by 80%.</strong></li>
+              <li>Diagnosed memory leaks via Valgrind; refactored ownership using RAII and smart pointers, improving runtime stability and performance.</li>
+              <li>Added 100+ GoogleTest functional tests, increasing module coverage to <strong>90%.</strong></li>
+              <li>Developed CMake build configuration on Linux during Yocto-to-Conan migration; resolved integration and dependency issues, improving build stability.</li>
+            </ul>
+            <div class="tech-tags">
+              <span>C++17</span><span>STL</span><span>GoogleTest</span><span>CMake</span><span>Valgrind</span><span>Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="job-title">Software Engineer</h3>
+                <p class="company">Cognizant Technology Solutions</p>
+                <p class="location">Bengaluru, India</p>
+              </div>
+              <span class="timeline-date">Feb 2021 – May 2023</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed features in a C-based logger module for an embedded networking system — captured structured logs, error codes, and runtime health status for diagnostics.</li>
+              <li>Reduced release cycle defects by <strong>25%</strong> through debugging, integration testing, and root cause analysis across VLAN and logging components.</li>
+              <li>Documented change logs, design notes, and test reports for SDLC traceability and smooth release handovers.</li>
+            </ul>
+            <div class="tech-tags">
+              <span>C</span><span>Embedded Linux</span><span>VLAN</span><span>GDB</span><span>Integration Testing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>C</span><span>C++17/20</span><span>Java</span><span>Python</span>
+            <span>TypeScript</span><span>JavaScript</span><span>HTML &amp; CSS</span><span>SQL</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="skill-tags">
+            <span>STL</span><span>OpenSSL</span><span>Spring Boot</span><span>Hibernate</span>
+            <span>Django</span><span>Flutter</span><span>FastAPI</span><span>GoogleTest</span><span>PyTest</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>Embedded &amp; Systems</h3>
+          <div class="skill-tags">
+            <span>Embedded Linux</span><span>Diagnostics &amp; Logging</span>
+            <span>Memory Management</span><span>GDB</span><span>gprof</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>Cloud &amp; DevOps</h3>
+          <div class="skill-tags">
+            <span>AWS EC2</span><span>EKS</span><span>RDS</span><span>S3</span><span>Lambda</span>
+            <span>IAM</span><span>KMS</span><span>CloudWatch</span><span>WAF</span>
+            <span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Jenkins</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>Databases &amp; Tools</h3>
+          <div class="skill-tags">
+            <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>DynamoDB</span>
+            <span>Neptune</span><span>CMake</span><span>Conan</span><span>Kafka</span><span>Git</span><span>Jira</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-number">01</span>
+            <div class="project-links">
+              <a href="https://github.com/heena5498" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Terrapin Events</h3>
+          <p class="project-tagline">Smart Campus Event Management System</p>
+          <p class="project-desc">Full-stack event management platform with FastAPI backend, React SPA, and MongoDB. Designed REST APIs with validation, pagination, and consistent error handling. Implemented role-based workflows and dashboards for admins, organizers, and participants. Optimized MongoDB queries for listings and search.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>FastAPI</span><span>React</span><span>TypeScript</span><span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-number">02</span>
+            <div class="project-links">
+              <a href="https://github.com/heena5498" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">BookMyEvent</h3>
+          <p class="project-tagline">Microservices Deployment on AWS EKS</p>
+          <p class="project-desc">Deployed a microservices-based booking system on AWS EKS using Docker and Kubernetes, enabling independent scaling and updates per service. Automated deployments with Helm and CI/CD. Added monitoring via CloudWatch, Prometheus, and Grafana. Also built a serverless CRUD API using Lambda and API Gateway integrated with RDS and least-privilege IAM.</p>
+          <div class="tech-tags">
+            <span>AWS EKS</span><span>Kubernetes</span><span>Docker</span><span>Helm</span><span>Lambda</span><span>Prometheus</span><span>Grafana</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-grid">
+
+        <div class="education-card reveal">
+          <div class="edu-header">
+            <div>
+              <h3>University of Maryland, College Park</h3>
+              <p class="degree">MEng in Software Engineering</p>
+              <p class="degree secondary">GCEN in Cloud Engineering</p>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-date">Expected Dec 2026</span>
+              <span class="edu-gpa">GPA: 3.78 / 4.0</span>
+            </div>
+          </div>
+          <div class="coursework">
+            <span>Software Requirements</span>
+            <span>Software Design &amp; Implementation</span>
+            <span>Cloud Computing</span>
+            <span>Cloud Security</span>
+            <span>Virtualization &amp; Containers</span>
+            <span>Advanced Python</span>
+          </div>
+        </div>
+
+        <div class="education-card reveal">
+          <div class="edu-header">
+            <div>
+              <h3>Vellore Institute of Technology</h3>
+              <p class="degree">BTech in Biotechnology</p>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-date">May 2021</span>
+              <span class="edu-gpa">GPA: 3.96 / 4.0</span>
+            </div>
+          </div>
+          <div class="coursework">
+            <span>Algorithms &amp; Data Structures</span>
+            <span>Object Oriented Programming</span>
+            <span>Probability &amp; Statistics</span>
+            <span>Linear Algebra</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-content">
+        <p class="contact-intro reveal">I'm currently open to new opportunities. Whether you have a question or just want to say hi, my inbox is always open.</p>
+        <div class="contact-links">
+          <a href="mailto:hkhan520@umd.edu" class="contact-item reveal">
+            <span class="contact-icon">&#9993;</span>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">hkhan520@umd.edu</span>
+            </div>
+          </a>
+          <a href="tel:+12407142878" class="contact-item reveal">
+            <span class="contact-icon">&#128222;</span>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">(240) 714-2878</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/heenakhan5" target="_blank" rel="noopener" class="contact-item reveal">
+            <span class="contact-icon contact-icon-text">in</span>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/heenakhan5</span>
+            </div>
+          </a>
+          <a href="https://github.com/heena5498" target="_blank" rel="noopener" class="contact-item reveal">
+            <span class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </span>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/heena5498</span>
+            </div>
+          </a>
+        </div>
+        <p class="contact-location reveal">&#128205; College Park, MD, USA</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>Designed &amp; Built by <strong>Heena Khan</strong> &nbsp;·&nbsp; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
