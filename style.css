@@ -374,6 +374,29 @@ body {
   align-items: start;
 }
 
+.about-photo-wrapper {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 6px var(--accent-dim);
+  filter: grayscale(15%);
+  transition: filter var(--transition), transform var(--transition);
+}
+
+.about-photo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
 .about-text p {
   color: var(--text-muted);
   font-size: 1.02rem;
